@@ -1,0 +1,392 @@
+/* reset element*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* variables*/
+
+:root{
+  --BG-COLOR:bisque;
+  --DARK-COLOR:black;
+
+}
+
+body{
+  
+  min-height: 100vh;
+  font-size: 28px;
+  text-transform: capitalize;
+  background-color: var(--BG-COLOR);
+  min-width: auto;  
+  color: var(--DARK-COLOR);
+}
+
+.injection:hover{
+  background-color: rgba(0, 0, 0, 0.226);
+  z-index: -1;
+  min-height: 100vh;
+
+}
+
+
+
+.nav a:hover{
+  transform: scale(1.2);
+  transition: all 0.5s;
+
+}
+
+.header{
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  background-color: var(--BG-COLOR);
+  padding: 1rem;
+}
+
+.header{
+  background-image: url('/tab.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 75%;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+}
+
+.nav a{
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--BG-COLOR);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+nav:h
+
+.nav a:hover{
+  transform: scale(1.3);
+  transition: all 0.6s;
+}
+
+
+
+.section1{
+  width: 35%;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin-left: 10rem;  
+}
+
+.section1 img{
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.section1 .h2{
+  background-color: transparent;
+  color: white;
+  width: 40%;
+  margin: auto;
+}
+
+.section1 figcaption{
+  background-color:transparent;
+  color: white;
+  width: 40%;
+  padding: 1rem;
+  margin: auto;
+}
+
+.animate{
+  animation-name: down-go;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  transform-origin: top center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes down-go{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(700px) skewX(-20deg);
+
+  }
+
+  100%{
+    transform: translateY(600px) skewX(-20deg);
+    color: aliceblue;
+  }
+}
+
+.div{
+  height: 400px;
+  width: 800px;
+  color: rgb(10, 5, 5);
+  display: flex;
+  justify-content: center;
+  margin-left: 1200px;
+  align-items: center;
+  align-content: center;  
+  margin-top: -27rem;
+  display: flex;
+  flex-flow: column ;
+
+}
+
+
+
+.animate2{
+  animation-name: up-go;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  color: aliceblue;
+  transform-origin: bottom center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes up-go{
+  0%{
+    transform: translateY(0) skewX(-20deg);
+    
+   
+  }
+  50%{
+    transform: translateY(-200px) skewX(-20deg);
+
+  }
+
+  100%{
+    transform: translateY(-100px) skewX(-20deg);
+    color: aliceblue;
+  }
+}
+
+.animate3{
+  animation-name: dd-go;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  transform-origin: top center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dd-go{
+  0%{
+    transform: translateY(0)  ;
+    
+  }
+  50%{
+    transform: translateY(190px) ;
+
+
+  }
+
+  100%{
+    transform: translateY(-200px) ;
+    
+  }
+}
+
+
+
+.main {
+  text-align: center;
+  font-size: larger;
+  margin-top: 2.5rem;
+  
+}
+
+.main dt{
+  border: 3px solid black;
+  width: 50%;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.section2{
+  width: 35%;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin-top: 2.5rem;
+ }
+
+.section2 img{
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+}
+.img{
+  transform: translateX(200px);
+}
+
+.animate6{
+  animation-name: img-go;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  transform-origin: left center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes img-go{
+  0%{
+    transform: translateX(0)  ;
+    
+  }
+  50%{
+    transform: translateX(200px) ;
+
+
+  }
+
+  100%{
+    transform: translateX(200px) ;
+  
+  }
+}
+
+.img-text{
+  transform: translateX(200px);
+}
+.animate7{
+  animation-name: img-text-go;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  transform-origin: left center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes img-text-go{
+  0%{
+    transform: translateX(0)  ;
+    
+  }
+  50%{
+    transform: translateX(150px) ;
+
+
+  }
+
+  100%{
+    transform: translateX(200px) ;
+  
+  }
+}
+
+.section2 .h2{
+ 
+  background-color: transparent;
+  color: white;
+  width: 40%;
+  margin: auto;
+}
+
+.section2 figcaption{
+ 
+  background-color:transparent;
+  color: rgb(37, 21, 21);
+  width: 40%;
+  padding: 1rem;
+  margin: auto;
+}
+
+.mainz{
+  margin-top: 10rem;
+  margin-bottom: 10rem
+}
+
+.hours{
+  transform: translateX(70rem);
+}
+
+.animate4{
+  animation-name: lg-go;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  transform-origin: left center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lg-go{
+  0%{
+    transform: translateX(0)  ;
+    
+  }
+  50%{
+    transform: translateX(70rem) ;
+
+
+  }
+
+  100%{
+    transform: translateX(70rem) ;
+  
+  }
+}
+
+.parag{
+  transform: translateX(65rem);
+}
+
+.animate5{
+  animation-name: para-go;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  transform-origin: left center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes para-go{
+  0%{
+    transform: translateX(0)  ;
+    
+  }
+  50%{
+    transform: translateX(60rem) ;
+
+
+  }
+
+  100%{
+    transform: translateX(65rem) ;
+  
+  }
+}
+
+
+.days{
+  margin-top: 2rem;
+  text-align: right;
+  transform: translateX(-70rem);  
+}
+
+
+.footer p{
+  background-color:black;
+  color: white;
+  padding:2rem;
+  text-align: center;
+  margin-top: 2rem ;
+}
+
